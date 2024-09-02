@@ -26,8 +26,9 @@
   },
   "type": "module",
   "dependencies": {
-    "@bsv/sdk": "^1.1.12",
+    "@bsv/sdk": "^1.1.19",
     "@vercel/postgres": "^0.9.0",
+    "bsv": "^2.0.10",
     "neucron-sdk": "^0.2.3",
     "neucron-signer": "^1.3.2",
     "scrypt-ts": "^1.3.31"

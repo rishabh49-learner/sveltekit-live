@@ -29,6 +29,31 @@
                 </button>
                 </form>
 			</div>
+			<!-- Update form for each user -->
+<form method="POST" action="/profiles?/update" class="flex items-center space-x-2">
+    <input type="hidden" name="id" value={user.id} />
+
+    <input
+        type="text"
+        name="name"
+        placeholder="New name"
+        value={user.name}
+        class="border border-gray-300 rounded py-1 px-2 text-sm"
+    />
+
+    <input
+        type="email"
+        name="email"
+        placeholder="New email"
+        value={user.email}
+        class="border border-gray-300 rounded py-1 px-2 text-sm"
+    />
+
+    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded">
+        Update
+    </button>
+</form>
+
 		{/each}
 	</div>
 </div>
